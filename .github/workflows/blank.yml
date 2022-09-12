@@ -37,8 +37,8 @@ jobs:
       - name: List current directory contents
         run: ls -la
       
-          before_install:
-      - chmod +x build.sh
 
       - name: Execute script.sh
-        run: ./script.sh
+        
+        run: chmod +x build.sh
+           ./script.sh
